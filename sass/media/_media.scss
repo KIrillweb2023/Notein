@@ -1,0 +1,435 @@
+@media (max-width: 1200px){
+    .header{
+        padding: 15px 15px;
+        &__logo{
+            column-gap: 10px;
+            &-text{
+                span{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+        &__menu{
+            &-link{
+                font-family: "Russo One", sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+    .main{
+        &-aside{
+            height: 100vh;
+            background-color: #EFEFEF;
+            width: 25%;
+            &__item{
+                &-text{
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+            }
+            &-accaunt{
+                &__attrubutes{
+                    column-gap: 10px;
+                    span{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                &__exit{
+                    cursor: pointer;
+                }
+            }
+        }
+        &-promo{
+            padding-left: 25%;
+            &__attrubutes{
+                align-items: center;
+                &__title{
+                    font-size: 30px;
+                }
+                .hamburger{
+                    width: 30px;
+                    height: 25px;
+                    .circle{
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+            
+            .line{
+                width: 100%;
+                height: 1px;
+                background-color: #282828;
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    .header{
+        padding: 15px 15px;
+        &__logo{
+            &-text{
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+        &__menu{
+            position: absolute;
+            width: 400px;
+            left: 100%;
+            transition: 0.3s all;
+            &.active{
+                left: 280px;
+            }
+
+            &-link{
+                font-family: "Russo One", sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+    .main{
+        &-aside{
+            height: 100vh;
+            background-color: #EFEFEF;
+            width: 25%;
+            &__item{
+                &-text{
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+            }
+            &-accaunt{
+                &__attrubutes{
+                    p{
+                        display: none;
+                    }
+                }
+                &__exit{
+                    width: 20px;
+                }
+            }
+        }
+        &-promo{
+            padding-top: 100px;
+            &__attrubutes{
+                &__title{
+                    font-size: 25px;
+                }
+                .hamburger{
+                    width: 30px;
+                    height: 25px;
+                    .circle{
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+            
+            .line{
+                width: 100%;
+                height: 1px;
+                background-color: #282828;
+                display: block;
+                margin: 0 auto;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .header{
+        padding: 15px 15px;
+        &__logo{
+            &-text{
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+        &__menu{
+            display: none;
+            &.active{
+                left: 280px;
+            }
+
+            &-link{
+                font-family: "Russo One", sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+    .modal{
+        left: -200%;
+    }
+    .main{
+        &-aside{
+            height: 100vh;
+            background-color: #EFEFEF;
+            width: 25%;
+            padding-left: 0;
+            &__item{
+                display: flex;
+                justify-content: center;
+                &-text{
+                    display: none;
+                }
+            }
+            &-accaunt{
+                &__attrubutes{
+                    .img{
+                        width: 30px;
+                    }
+                    .text{
+                        span.none{
+                            display: none;
+                        }
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+                &__exit{
+                    width: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &-promo{
+            padding-top: 100px;
+            &__attrubutes{
+                &__title{
+                    font-size: 20px;
+                }
+                .hamburger{
+                    width: 30px;
+                    height: 20px;
+                    gap: 2px;
+                    .circle{
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+            
+            .line{
+                width: 100%;
+                height: 1px;
+                background-color: #282828;
+                display: block;
+                margin: 0 auto;
+                margin-top: 15px;
+            }
+        }
+    }
+    .adding__them{
+        width: 50px;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+@media (max-width: 567px){
+
+}
+@media (max-width: 400px){
+  
+    .header{
+        padding: 15px 5px;
+        &-settings{
+            width: 20px;
+            img{
+                width: 100%;
+            }
+        }
+        &__logo{
+            img{
+                width: 30px;
+            }
+            &-text{
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .main{
+        &-aside{
+            width: 15%;
+            padding-top: 80px;
+            &__item{
+                img{
+                    width: 25px;
+                }
+            }
+            &-accaunt{
+                left: 10px;
+                bottom: 8px;
+                &__attrubutes{
+                    flex-direction: column;
+                    justify-content: center;
+                    .text{
+                        span{
+                            font-size: 12px;
+                        }
+                       
+                    }
+                }
+                
+                &__exit{
+                    display: none;
+                }
+            }
+            .line{
+                bottom: 70px;
+            }
+        }
+        &-promo{
+            padding-top: 80px;
+            padding-left: 15%;
+            &__attrubutes{
+                .hamburger{
+                    width: 25px;
+                    height: 19px;
+                    .circle{
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+                &__title{
+                    font-size: 18px;
+                }
+            }
+            .tasking{
+                .task{
+                    width: 280px;
+                    height: 100px;
+                    border-radius: 15px;
+                    column-gap: 15px;
+                    .block-color{
+                        width: 20px;
+                        height: 100%;
+                        border-radius: 13px 0px 0px 13px;
+                        background: #C344FF;
+                    }
+                    .pinned{
+                        width: 20px;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+                    .remove{
+                        width: 15px;
+                        right: 40px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .block-color{
+                        width: 5px;
+                        height: 97%;
+                        margin-top: 2px;
+                    }
+                    .text{
+                        padding-top: 20px;
+                        column-gap: 15px;
+                        .task-title{
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                        .task-descr{
+                            font-size: 10px;
+                            width: auto;
+                        }
+                        .colors{
+                            margin-top: 10px;
+                            font-size: 12px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .adding__them {
+        width: 40px;
+    }
+    .modal{
+        .close{
+            width: 20px;
+        }
+        &__block{
+            padding: 40px 20px 20px 20px;
+            height: 500px;
+            width: 300px;
+            top: 30px;
+            &-title{
+                font-size: 18px;
+            }
+            &-color{
+                &__text{
+                    font-size: 12px;
+                }
+                &__colors{
+                    width: 115px;
+                    .restangle{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            &-form{
+                &__title{
+                    margin-top: 20px;
+                    &-text{
+                        font-size: 12px;
+                    }
+                    &-input{
+                        height: 35px;
+                        font-size: 10px;
+                    }
+                    &-texarea{
+                        height: 100px;
+                        font-size: 10px;
+                    }
+                }
+                &__attrubutes{
+                    &-title{
+                        font-size: 12px;
+                    }
+                    .block{
+                        .checkbox{
+                            width: 20px;
+                            height: 20px;
+                            &.active{
+                                &::after{
+                                    top: 1px;
+                                    left: 5px;
+                                    border-width: 0px 2px 2px 0;
+                                }
+                            }
+                        }
+                        .text{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                &__btn{
+                    height: 35px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

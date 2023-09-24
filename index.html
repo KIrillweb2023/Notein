@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="./icons/headerIcon/notein.svg" alt="logo">
+                <div class="header__logo-text">
+                    <span class="main-text">NoteinPage</span><br><p>Создавайте свои заметки</p>
+                </div>
+            </div>
+    
+            <div class="header__menu">
+                <a href="#" class="header__menu-link">Мой аккаунт</a>
+                <a href="#" class="header__menu-link">Обратная связь</a>
+                <a href="#" class="header__menu-link">Руководство</a>
+            </div>
+    
+            <div class="header-settings">
+                <img src="./icons/headerIcon/settings.svg" alt="settings">
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main__wrapper">
+            <aside class="main-aside">
+                <div class="main-aside__item">
+                    <img src="./icons/main-icons/graph.svg" alt="">
+                    <p class="main-aside__item-text">Мои заметки</p>
+                </div>
+                <div class="main-aside__item">
+                    <img src="./icons/main-icons/statistics.svg" alt="">
+                    <p class="main-aside__item-text">Моя статистика</p>
+                </div>
+                <div class="main-aside__item">
+                    <img src="./icons/main-icons/task.svg" alt="">
+                    <p class="main-aside__item-text">Выполнено</p>
+                </div>
+                <div class="line"></div>
+                <div class="main-aside-accaunt">
+                    
+                    <div class="main-aside-accaunt__attrubutes">
+                        <img src="./icons/main-icons/accaunt/Ellipse.svg" alt="" class="img">
+
+                        <div class="text">
+                            <span>Kirill <span class="none">Gulaev</span> </span>
+                            <p>gulaevK@gmail.com</p>
+                        </div>
+                    </div>
+                   
+                    <div class="main-aside-accaunt__exit">
+                        <img src="./icons/main-icons/accaunt/exit.svg" alt="exit">
+                    </div>
+                </div>
+            </aside>
+
+            <div class="main-promo">
+               <div class="container">
+                    <div class="main-promo__attrubutes">
+                        <h1 class="main-promo__attrubutes__title">Мои заметки</h1>
+                        <div class="hamburger">
+                            <span class="circle red"></span>
+                            <span class="circle blue"></span>
+                            <span class="circle green"></span>
+                            <span class="circle yellow"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="line"></div>
+                    <div class="tasking">
+                        <!-- <div class="task">
+                            <div class="remove">
+                                <img src="./icons/main-icons/cross_ameo39np7q7r.svg" alt="">
+                            </div>
+                            <div class="block-color"></div>
+                            <div class="text">
+                                <h2 class="task-title">heelo</h2>
+                                <p class="task-descr">World</p>
+                            </div>
+                            <img src="./icons/pinned.svg" alt="pinned" class="pinned">
+                        </div> -->
+
+                    </div>
+
+
+                    
+               </div>
+            </div>
+        </div>
+    </section>
+    <img src="./icons/main-icons/Group 1.svg" alt="" class="adding__them">
+
+    <div class="modal">
+        <div class="modal__block">
+            <div class="close">
+                <img src="./icons/main-icons/cross_ameo39np7q7r.svg" alt="" class="close">
+            </div>
+            <h2 class="modal__block-title">Создание заметки</h2>
+            <div class="line"></div>
+
+            <div class="modal__block-color">
+                <p class="modal__block-color__text">Все цвета заметок:</p>
+
+                <div class="modal__block-color__colors">
+                    <div class="restangle red"></div>
+                    <div class="restangle yellow"></div>
+                    <div class="restangle blue"></div>
+                    <div class="restangle purple"></div>
+                    <div class="restangle green"></div>
+                </div>
+            </div>
+
+            <form action="#" class="modal__block-form">
+                <div class="modal__block-form__title">
+                    <p class="modal__block-form__title-text">Заголовок заметки</p>
+                    <input type="text" class="modal__block-form__title-input" placeholder="Введенный текст будет отображен в заголовке заметки">
+                </div>
+                <div class="modal__block-form__title">
+                    <p class="modal__block-form__title-text">Основной текст в заметке</p>
+                    <textarea type="text" class="modal__block-form__title-texarea" placeholder="Введенный текст будет отображен в самой заметке"></textarea>
+                </div>
+
+                <div class="modal__block-form__attrubutes">
+                    <p class="modal__block-form__attrubutes-title">Прочее</p>
+                    <div class="block">
+                        <div class="checkbox"></div>
+                        <div class="text">Закрепить</div>
+                    </div>
+                </div>
+
+                <button class="modal__block-form__btn">Создать</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

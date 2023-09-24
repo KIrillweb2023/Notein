@@ -1,0 +1,52 @@
+.header{
+    background-color: #282828;
+    min-height: 20px;
+    padding: 15px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        &-text{
+            span{
+                font-family: 'Russo One', sans-serif;
+                font-size: 18px;
+                color: #fff;
+            }
+            p{
+                color: #9A9A9A;
+                font-family: "Russo One", sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+    &__menu{
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        &-link{
+            font-family: "Russo One", sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 3px solid #ffffff00;
+            line-height: 40px;
+            &:hover{
+                transition: .3s all;
+                border-bottom: 3px solid #54C0EB;
+            }
+        }
+    }
+    &-settings{
+        cursor: pointer;
+    }
+}

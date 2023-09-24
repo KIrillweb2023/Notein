@@ -1,0 +1,101 @@
+@import './fonts/fonts';
+@import './block/header';
+@import './block/main';
+@import './block/modal-add';
+@import './media/media';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+.tasking{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 80%;
+}
+
+.task{
+    width: 433px;
+    height: 150px;
+    border-radius: 15px;
+    border: 2px solid #cccccc;
+    display: flex;
+    position: relative;
+    column-gap: 30px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #dadada;
+    .block-color{
+        width: 20px;
+        height: 100%;
+        border-radius: 13px 0px 0px 13px;
+        background: #C344FF;
+    }
+    .pinned{
+        width: 25px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .remove{
+        width: 20px;
+        height: 20px ;
+        position: absolute;
+        top: 13px;
+        cursor: pointer;
+        right: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .text{
+        padding-top: 30px;
+        .task-title{
+            color: #000;
+            font-family: "Inter", sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .task-descr{
+            font-size: 14px;
+            margin-top: 5px;
+            width: 380px;
+            display: block;
+        }
+        .colors{
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+            color: #5a5a5a;
+            margin-top: 20px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            outline: none
+        }
+    }
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+// .background{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100vh;
+//     width: 100%;
+//     background: url('../img/main1.jpg') center (center / cover) no-repeat;
+//     z-index: -10;
+// }
